@@ -235,6 +235,7 @@ header .content button {
 .feedback-togglers button{
     width: 16px;
     height: 16px;
+    cursor: pointer;
 }
 
 .price-list {
