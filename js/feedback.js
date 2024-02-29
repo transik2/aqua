@@ -19,5 +19,8 @@ for(let i=0; i<togglers.length; i++) {
         else {
             feedbacks[i + 1].classList.add("next");
         }
+        document.querySelector(".feedback-togglers button.current").classList.remove("current");
+        togglers[i].classList.add("current");
     }
 }
+

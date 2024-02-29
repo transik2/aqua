@@ -4,24 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/adaptive.css">
 </head>
 <body>
   <header>
     <div class="content">
-      <a href="">
+      <a class="mobile-logo" href="">
           <img src="imgs/Group 1.svg" alt="">
       </a>
-      <nav>
-        <a href="">Главная</a>
-        <a href="">Сеансы</a>
-        <a href="">Отзывы</a>
-        <a href="">Контакты</a>
-        <a href="">Новости</a>
-        <a href="">Обо мне</a>
-        <a href="">Блог</a>   
-      </nav>
-      <button>Записаться на сеанс</button>
+      <button id="open-menu">
+        <img src="imgs/menu.svg" alt="">
+      </button>
+      <div id="menu">
+        <button id="close-menu">
+          <img src="imgs/close_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        </button>
+        <a class="desktop-logo" href="">
+          <img src="imgs/Group 1.svg" alt="">
+        </a>
+        <nav>
+          <a href="">Главная</a>
+          <a href="">Сеансы</a>
+          <a href="">Отзывы</a>
+          <a href="">Контакты</a>
+          <a href="">Новости</a>
+          <a href="">Обо мне</a>
+          <a href="">Блог</a>   
+        </nav>
+        <button class="header-appointment">Записаться на сеанс</button>
+      </div>
     </div>
   </header>
   <main>
@@ -37,7 +49,7 @@
             <h4>Стандартный RitmStyle</h4>
             <div class="session-underline"></div>
           </div>
-          <div class="two-session">
+          <div class="two-session one">
             <div class="small-session">
               <h4>Ritmstyle для пар</h4>
               <div class="session-underline"></div>
@@ -47,7 +59,7 @@
               <div class="session-underline"></div>
             </div>
           </div>
-          <div class="two-session">
+          <div class="two-session two">
             <div class="small-session">
               <h4>RitmStyle с полным погружением под воду</h4>
               <div class="session-underline"></div>
@@ -77,7 +89,7 @@
         </div>
       </div>
       <div class="feedback-togglers">
-        <button></button>
+        <button class="current"></button>
         <button></button>
         <button></button>
       </div> 
@@ -110,5 +122,6 @@
     </div>
   </main>
   <script src="js/feedback.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 </html>

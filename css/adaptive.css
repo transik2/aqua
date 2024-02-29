@@ -1,0 +1,91 @@
+@media screen and (max-width: 1000px) {
+    .content-heading {
+        font-size: 28px;
+    }
+    #menu {
+        width: 60%;
+        max-width: 500px;
+        height: 100vh;
+        background-color: #018ABE;
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 50px;
+        z-index: 10;
+        transform: translateX(100%);
+        transition: 0.2s;
+        gap: 30px;
+    }
+    #menu.opened {
+        transform: translateX(0);
+    }
+    .desktop-logo {
+        display: none;
+    }
+    .mobile-logo {
+        display: block;
+    }
+    nav {
+        height: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 0;
+    }
+    #close-menu, #open-menu {
+        background-color: #018ABE;
+        border: none;
+        display: block;
+        padding: 10px 10px 5px 10px;
+        border-radius: 50px;
+    }
+    .header-appointment {
+        background-color: #162831;
+    }
+    .price-list {
+        grid-template-columns: 1fr;
+    }
+    .cost {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .intro h1 {
+        font-size: 32px;
+    }
+    .intro h3 {
+        font-size: 18px;
+    }
+    .sessions {
+        display:flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .big-session {
+        height: 100%;
+        overflow: visible;
+    }
+    .two-session.one, .two-session.two {
+        height: 100%;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .small-session {
+        width: 100%;
+    }
+    .sessions h4 {
+        font-size: 16px;
+    }
+    .feedback-item.current {
+        width: 390px;
+    }
+    .feedback-item h4 {
+        font-size: 20px;
+    }
+    .gift-voucher {
+        width: 380px
+    }
+}
